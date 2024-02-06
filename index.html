@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="mk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brainster Labs</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <section class="container-fluid custom-bg-yellow">
+      <div class="row justify-content-center">
+        <div class="col-xl-11">
+          <nav class="navbar navbar-dark navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><img class="logo" src="./images/Brainster.co.png" alt="Brainster logo" /></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas custom-bg-grey offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header justify-content-end">
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body text-left text-sm-center">
+                  <ul class="navbar-nav justify-content-end m-auto">
+                    <li class="nav-item">
+                      <a class="nav-link fw-bold mb-3 mb-lg-0 custom-color-grey link" aria-current="page" href="comingSoon.html">Академија за маркетинг</a>
+                    </li>
+                    <li class="nav-item mx-xxl-4">
+                      <a class="nav-link fw-bold mb-3 mb-lg-0 custom-color-grey link" href="comingSoon.html">Академија за програмирање</a>
+                    </li>
+                    <li class="nav-item me-xxl-4">
+                      <a class="nav-link fw-bold mb-3 mb-lg-0 custom-color-grey link" href="comingSoon.html">Академија за data science</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link fw-bold mb-3 mb-lg-0 custom-color-grey link" href="comingSoon.html">Академија за дизајн</a>
+                    </li>
+                  </ul>
+                  <a href="vraboti.html" class="btn text-white mt-4 mt-lg-0 custom-bg-red custom-btn">Вработи наш студент</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <!-- HEADER -->
+
+    <section class="container-fluid">
+      <div class="row header">
+        <div class="col text-center">
+          <h1 class="text-white display-1 fw-bold header-title">Brainster Labs</h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- FILTERS -->
+
+    <section class="d-flex flex-column flex-lg-row">
+      <input type="checkbox" class="btn-check" id="filterMarketing" autocomplete="off" />
+      <label class="btn btn-dark custom-bg-grey d-flex align-items-center btn-filter" for="filterMarketing">
+        <span>Проекти на студенти по академијата за маркетинг</span>
+        <div class="text-center filter-icon">
+          <i class="fa-solid fa-circle-check d-none fa-2xl"></i>
+        </div>
+      </label>
+      <input type="checkbox" class="btn-check" id="filterCoding" autocomplete="off" />
+      <label class="btn btn-dark custom-bg-grey d-flex align-items-center border-start border-end border-dark btn-filter" for="filterCoding"
+        ><span>Проекти на студенти по академијата за програмирање</span>
+        <div class="text-center filter-icon">
+          <i class="fa-solid fa-circle-check d-none fa-2xl"></i>
+        </div>
+      </label>
+      <input type="checkbox" class="btn-check" id="filterDesign" autocomplete="off" />
+      <label class="btn btn-dark custom-bg-grey d-flex align-items-center btn-filter" for="filterDesign"
+        ><span>Проекти на студенти по академијата за дизајн</span>
+        <div class="text-center filter-icon">
+          <i class="fa-solid fa-circle-check d-none fa-2xl"></i>
+        </div>
+      </label>
+    </section>
+
+    <!-- CARDS -->
+    <section class="container-fluid section-cards custom-bg-yellow">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h2 class="text-center display-3 fw-bold mb-5">Проекти</h2>
+          <div class="row">
+            <!-- MARKETING CARDS -->
+
+            <div class="col-md-6 col-lg-4 mb-4 info-card card-marketing">
+              <div class="card shadow-lg border-0 rounded-4 h-100">
+                <img src="./images/card-1.jpg" class="card-img-top" alt="card-img-1" />
+                <div class="card-body">
+                  <p class="custom-bg-yellow d-inline-block px-3 fw-bold">Академија за Маркетинг</p>
+                  <h4 class="card-title fw-bold">Име на проектот стои овде во две линии</h4>
+                  <p class="card-text">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                  <p class="small fw-bold">Април - Октомври 2023</p>
+                  <div class="text-end">
+                    <a href="#" class="btn custom-bg-red text-white custom-btn px-4">Дознај повеќе</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 info-card card-marketing">
+              <div class="card shadow-lg border-0 rounded-4 h-100">
+                <img src="./images/card-2.jpg" class="card-img-top" alt="card-img-2" />
+                <div class="card-body">
+                  <p class="custom-bg-yellow d-inline-block px-3 fw-bold">Академија за Маркетинг</p>
+                  <h4 class="card-title fw-bold">Име на проектот стои овде во две линии</h4>
+                  <p class="card-text">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                  <p class="small fw-bold">Април - Октомври 2023</p>
+                  <div class="text-end">
+                    <a href="#" class="btn custom-bg-red text-white custom-btn px-4">Дознај повеќе</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 info-card card-marketing">
+              <div class="card shadow-lg border-0 rounded-4 h-100">
+                <img src="./images/card-3.jpg" class="card-img-top" alt="card-img-3" />
+                <div class="card-body">
+                  <p class="custom-bg-yellow d-inline-block px-3 fw-bold">Академија за Маркетинг</p>
+                  <h4 class="card-title fw-bold">Име на проектот стои овде во две линии</h4>
+                  <p class="card-text">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                  <p class="small fw-bold">Април - Октомври 2023</p>
+                  <div class="text-end">
+                    <a href="#" class="btn custom-bg-red text-white custom-btn px-4">Дознај повеќе</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 info-card card-marketing">
+              <div class="card shadow-lg border-0 rounded-4 h-100">
+                <img src="./images/card-4.jpg" class="card-img-top" alt="card-img-4" />
+                <div class="card-body">
+                  <p class="custom-bg-yellow d-inline-block px-3 fw-bold">Академија за Маркетинг</p>
+                  <h4 class="card-title fw-bold">Име на проектот стои овде во две линии</h4>
+                  <p class="card-text">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                  <p class="small fw-bold">Април - Октомври 2023</p>
+                  <div class="text-end">
+                    <a href="#" class="btn custom-bg-red text-white custom-btn px-4">Дознај повеќе</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 info-card card-marketing">
+              <div class="card shadow-lg border-0 rounded-4 h-100">
+                <img src="./images/card-5.jpg" class="card-img-top" alt="card-img-5" />
+                <div class="card-body">
+                  <p class="custom-bg-yellow d-inline-block px-3 fw-bold">Академија за Маркетинг</p>
+                  <h4 class="card-title fw-bold">Име на проектот стои овде во две линии</h4>
+                  <p class="card-text">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                  <p class="small fw-bold">Април - Октомври 2023</p>
+                  <div class="text-end">
+                    <a href="#" class="btn custom-bg-red text-white custom-btn px-4">Дознај повеќе</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 info-card card-marketing">
+              <div class="card shadow-lg border-0 rounded-4 h-100">
+                <img src="./images/card-6.jpg" class="card-img-top" alt="card-img-6" />
+                <div class="card-body">
+                  <p class="custom-bg-yellow d-inline-block px-3 fw-bold">Академија за Маркетинг</p>
+                  <h4 class="card-title fw-bold">Име на проектот стои овде во две линии</h4>
+                  <p class="card-text">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                  <p class="small fw-bold">Април - Октомври 2023</p>
+                  <div class="text-end">
+                    <a href="#" class="btn custom-bg-red text-white custom-btn px-4">Дознај повеќе</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- CODING CARDS -->
+
+            <div class="col-md-6 col-lg-4 mb-4 info-card card-coding">
+              <div class="card shadow-lg border-0 rounded-4 h-100">
+                <img src="./images/card-7.jpg" class="card-img-top" alt="card-img-7" />
+                <div class="card-body">
+                  <p class="custom-bg-blue d-inline-block px-3 fw-bold">Академија за Програмирање</p>
+                  <h4 class="card-title fw-bold">Име на проектот стои овде во две линии</h4>
+                  <p class="card-text">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                  <p class="small fw-bold">Април - Октомври 2023</p>
+                  <div class="text-end">
+                    <a href="#" class="btn custom-bg-red text-white custom-btn px-4">Дознај повеќе</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 info-card card-coding">
+              <div class="card shadow-lg border-0 rounded-4 h-100">
+                <img src="./images/card-8.jpg" class="card-img-top" alt="card-img-8" />
+                <div class="card-body">
+                  <p class="custom-bg-blue d-inline-block px-3 fw-bold">Академија за Програмирање</p>
+                  <h4 class="card-title fw-bold">Име на проектот стои овде во две линии</h4>
+                  <p class="card-text">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                  <p class="small fw-bold">Април - Октомври 2023</p>
+                  <div class="text-end">
+                    <a href="#" class="btn custom-bg-red text-white custom-btn px-4">Дознај повеќе</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 info-card card-coding">
+              <div class="card shadow-lg border-0 rounded-4 h-100">
+                <img src="./images/card-9.jpg" class="card-img-top" alt="card-img-9" />
+                <div class="card-body">
+                  <p class="custom-bg-blue d-inline-block px-3 fw-bold">Академија за Програмирање</p>
+                  <h4 class="card-title fw-bold">Име на проектот стои овде во две линии</h4>
+                  <p class="card-text">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                  <p class="small fw-bold">Април - Октомври 2023</p>
+                  <div class="text-end">
+                    <a href="#" class="btn custom-bg-red text-white custom-btn px-4">Дознај повеќе</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 info-card card-coding">
+              <div class="card shadow-lg border-0 rounded-4 h-100">
+                <img src="./images/card-10.jpg" class="card-img-top" alt="card-img-10" />
+                <div class="card-body">
+                  <p class="custom-bg-blue d-inline-block px-3 fw-bold">Академија за Програмирање</p>
+                  <h4 class="card-title fw-bold">Име на проектот стои овде во две линии</h4>
+                  <p class="card-text">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                  <p class="small fw-bold">Април - Октомври 2023</p>
+                  <div class="text-end">
+                    <a href="#" class="btn custom-bg-red text-white custom-btn px-4">Дознај повеќе</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 info-card card-coding">
+              <div class="card shadow-lg border-0 rounded-4 h-100">
+                <img src="./images/card-11.jpg" class="card-img-top" alt="card-img-11" />
+                <div class="card-body">
+                  <p class="custom-bg-blue d-inline-block px-3 fw-bold">Академија за Програмирање</p>
+                  <h4 class="card-title fw-bold">Име на проектот стои овде во две линии</h4>
+                  <p class="card-text">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                  <p class="small fw-bold">Април - Октомври 2023</p>
+                  <div class="text-end">
+                    <a href="#" class="btn custom-bg-red text-white custom-btn px-4">Дознај повеќе</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 info-card card-coding">
+              <div class="card shadow-lg border-0 rounded-4 h-100">
+                <img src="./images/card-12.jpg" class="card-img-top" alt="card-img-12" />
+                <div class="card-body">
+                  <p class="custom-bg-blue d-inline-block px-3 fw-bold">Академија за Програмирање</p>
+                  <h4 class="card-title fw-bold">Име на проектот стои овде во две линии</h4>
+                  <p class="card-text">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                  <p class="small fw-bold">Април - Октомври 2023</p>
+                  <div class="text-end">
+                    <a href="#" class="btn custom-bg-red text-white custom-btn px-4">Дознај повеќе</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 info-card card-coding">
+              <div class="card shadow-lg border-0 rounded-4 h-100">
+                <img src="./images/card-13.jpg" class="card-img-top" alt="card-img-13" />
+                <div class="card-body">
+                  <p class="custom-bg-blue d-inline-block px-3 fw-bold">Академија за Програмирање</p>
+                  <h4 class="card-title fw-bold">Име на проектот стои овде во две линии</h4>
+                  <p class="card-text">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                  <p class="small fw-bold">Април - Октомври 2023</p>
+                  <div class="text-end">
+                    <a href="#" class="btn custom-bg-red text-white custom-btn px-4">Дознај повеќе</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 info-card card-coding">
+              <div class="card shadow-lg border-0 rounded-4 h-100">
+                <img src="./images/card-14.jpg" class="card-img-top" alt="card-img-14" />
+                <div class="card-body">
+                  <p class="custom-bg-blue d-inline-block px-3 fw-bold">Академија за Програмирање</p>
+                  <h4 class="card-title fw-bold">Име на проектот стои овде во две линии</h4>
+                  <p class="card-text">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                  <p class="small fw-bold">Април - Октомври 2023</p>
+                  <div class="text-end">
+                    <a href="#" class="btn custom-bg-red text-white custom-btn px-4">Дознај повеќе</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 info-card card-coding">
+              <div class="card shadow-lg border-0 rounded-4 h-100">
+                <img src="./images/card-15.jpg" class="card-img-top" alt="card-img-15" />
+                <div class="card-body">
+                  <p class="custom-bg-blue d-inline-block px-3 fw-bold">Академија за Програмирање</p>
+                  <h4 class="card-title fw-bold">Име на проектот стои овде во две линии</h4>
+                  <p class="card-text">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                  <p class="small fw-bold">Април - Октомври 2023</p>
+                  <div class="text-end">
+                    <a href="#" class="btn custom-bg-red text-white custom-btn px-4">Дознај повеќе</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 info-card card-coding">
+              <div class="card shadow-lg border-0 rounded-4 h-100">
+                <img src="./images/card-16.jpg" class="card-img-top" alt="card-img-16" />
+                <div class="card-body">
+                  <p class="custom-bg-blue d-inline-block px-3 fw-bold">Академија за Програмирање</p>
+                  <h4 class="card-title fw-bold">Име на проектот стои овде во две линии</h4>
+                  <p class="card-text">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                  <p class="small fw-bold">Април - Октомври 2023</p>
+                  <div class="text-end">
+                    <a href="#" class="btn custom-bg-red text-white custom-btn px-4">Дознај повеќе</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- DESIGN CARDS -->
+
+            <div class="col-md-6 col-lg-4 mb-4 info-card card-design">
+              <div class="card shadow-lg border-0 rounded-4 h-100">
+                <img src="./images/card-17.jpg" class="card-img-top" alt="card-img-17" />
+                <div class="card-body">
+                  <p class="custom-bg-green d-inline-block px-3 fw-bold">Академија за Дизајн</p>
+                  <h4 class="card-title fw-bold">Име на проектот стои овде во две линии</h4>
+                  <p class="card-text">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                  <p class="small fw-bold">Април - Октомври 2023</p>
+                  <div class="text-end">
+                    <a href="#" class="btn custom-bg-red text-white custom-btn px-4">Дознај повеќе</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 info-card card-design">
+              <div class="card shadow-lg border-0 rounded-4 h-100">
+                <img src="./images/card-18.jpg" class="card-img-top" alt="card-img-18" />
+                <div class="card-body">
+                  <p class="custom-bg-green d-inline-block px-3 fw-bold">Академија за Дизајн</p>
+                  <h4 class="card-title fw-bold">Име на проектот стои овде во две линии</h4>
+                  <p class="card-text">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                  <p class="small fw-bold">Април - Октомври 2023</p>
+                  <div class="text-end">
+                    <a href="#" class="btn custom-bg-red text-white custom-btn px-4">Дознај повеќе</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 info-card card-design">
+              <div class="card shadow-lg border-0 rounded-4 h-100">
+                <img src="./images/card-19.jpg" class="card-img-top" alt="card-img-19" />
+                <div class="card-body">
+                  <p class="custom-bg-green d-inline-block px-3 fw-bold">Академија за Дизајн</p>
+                  <h4 class="card-title fw-bold">Име на проектот стои овде во две линии</h4>
+                  <p class="card-text">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                  <p class="small fw-bold">Април - Октомври 2023</p>
+                  <div class="text-end">
+                    <a href="#" class="btn custom-bg-red text-white custom-btn px-4">Дознај повеќе</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 info-card card-design">
+              <div class="card shadow-lg border-0 rounded-4 h-100">
+                <img src="./images/card-20.jpg" class="card-img-top" alt="card-img-20" />
+                <div class="card-body">
+                  <p class="custom-bg-green d-inline-block px-3 fw-bold">Академија за Дизајн</p>
+                  <h4 class="card-title fw-bold">Име на проектот стои овде во две линии</h4>
+                  <p class="card-text">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                  <p class="small fw-bold">Април - Октомври 2023</p>
+                  <div class="text-end">
+                    <a href="#" class="btn custom-bg-red text-white custom-btn px-4">Дознај повеќе</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center d-block d-md-none mt-4 load-more">
+            <button type="button" id="loadMore" class="btn custom-bg-red text-white custom-btn px-4">Прикажи повеќе</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="container-fluid custom-bg-grey">
+      <div class="row">
+        <div class="col">
+          <p class="text-white text-center m-0 py-2">Изработено со 💖 од студентите на Brainster</p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://kit.fontawesome.com/0d83d5e4da.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
